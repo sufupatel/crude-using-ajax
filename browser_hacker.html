@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+<title>Example of CSS Hacks for CHROME and INTERNET EXPLORER</title>
+<link rel="stylesheet" type="text/css" href="hacks.css">
+<style>
+    .block{
+        height: 400px;
+        border: 1px solid #000000;
+        width: 400px;
+        
+    }
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+  .block{
+      background-color: #FF0000;
+  }  
+}
+
+@media \0screen\,screen\9 {
+    body { background: red; }
+}
+</style>
+</head>
+
+<body>
+<div class="block"></div>
+</body>
+
+</html>
